@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">assignment4Onis</string>
+    <string name="button1">New Word</string>
+    <string name="button2">Remove Word</string>
+    <string name="enterWord">Enter Your Word</string>
+    <string name="wordString">Word</string>
+    <string name="frequencyString">Frequency</string>
+    <string name="add">Add</string>
+    <string name="clear">Clear</string>
+    <string name="homePage">Home Page</string>
+    <string name="meaningString">Meaning</string>
+    <string name="name">Name</string>
+    <string name="frequentWord3">Frequent Word 3</string>
+    <string name="frequentWord2">Frequent Word 2</string>
+    <string name="frequentWord1">Frequent Word 1</string>
+    <string name="findDefinition">Find</string>
+</resources>

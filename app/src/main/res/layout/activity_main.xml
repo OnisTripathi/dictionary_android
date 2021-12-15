@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+    <EditText
+            android:layout_width="169dp"
+            android:layout_height="32dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName5"
+            android:background="@color/grey_300"
+            android:layout_marginLeft="25dp" android:layout_marginStart="25dp"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName4" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6"
+            android:autofillHints="" tools:ignore="LabelFor"/>
+    <EditText
+            android:layout_width="169dp"
+            android:layout_height="32dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:background="@color/grey_300"
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_marginLeft="25dp" android:layout_marginStart="25dp"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName" android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName7" android:autofillHints=""
+            tools:ignore="LabelFor"/>
+    <EditText
+            android:layout_width="169dp"
+            android:layout_height="32dp"
+            android:inputType="textPersonName"
+            android:background="@color/grey_300"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_marginLeft="25dp" android:layout_marginStart="25dp"
+            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName2" android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/inputWord" android:autofillHints="" tools:ignore="LabelFor"/>
+    <EditText
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:inputType="textPersonName"
+            android:text="@string/frequentWord1"
+            android:textSize="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="52dp" android:layout_marginStart="52dp"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toBottomOf="@+id/button3"
+            android:autofillHints="" tools:ignore="LabelFor,SpUsage"/>
+    <EditText
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:inputType="textPersonName"
+            android:text="@string/frequentWord3"
+            android:textSize="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName4"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="50dp" android:layout_marginStart="50dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" android:autofillHints=""
+            tools:ignore="LabelFor,SpUsage"/>
+    <Button
+            android:text="@string/findDefinition"
+            android:layout_width="80dp"
+            android:layout_height="48dp" android:id="@+id/button3"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView1"
+            tools:ignore="UnknownId" app:layout_constraintEnd_toStartOf="@+id/inputWord"
+            android:layout_marginEnd="37dp" android:layout_marginRight="37dp"/>
+    <Button
+            android:text="@string/button1"
+            android:layout_width="311dp"
+            android:layout_height="43dp" android:id="@+id/button2"
+            android:layout_marginEnd="50dp" android:layout_marginRight="50dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="50dp" android:layout_marginStart="50dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/button1" android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/displayDefinition" app:layout_constraintVertical_bias="0.0"/>
+    <EditText
+            android:id="@+id/inputWord"
+            android:layout_width="192.5dp"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:background="@color/orange_50"
+            android:textColorHint="@android:color/black"
+            android:textSize="18sp" android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView1" android:autofillHints="" tools:ignore="LabelFor"/>
+
+
+    <Button
+            android:text="@string/button2"
+            android:layout_width="311dp"
+            android:layout_height="43dp" android:id="@+id/button1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="50dp" android:layout_marginRight="50dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="50dp" android:layout_marginStart="50dp" android:layout_marginBottom="72dp"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/button2"/>
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="309.5dp"
+            android:layout_height="68dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/enterWord"
+            android:textSize="30sp"
+            android:textColor="@color/dark_purple_A100"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            app:layout_constraintHorizontal_bias="1.0" android:layout_marginTop="12dp"/>
+    <TextView
+            android:id="@+id/displayDefinition"
+            android:layout_width="313dp"
+            android:layout_height="150dp"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:background="@color/orange_50"
+            android:textStyle="normal" tools:ignore="MissingConstraints"
+            android:layout_marginEnd="50dp" android:layout_marginRight="50dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="50dp" android:layout_marginStart="50dp" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+            app:layout_constraintHorizontal_bias="1.0"
+    />
+    <EditText
+            android:layout_width="117dp"
+            android:layout_height="32dp"
+            android:inputType="textPersonName"
+            android:text="@string/frequentWord2"
+            android:textSize="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:ems="10"
+            android:id="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="50dp" android:layout_marginStart="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" android:layout_marginTop="12dp"
+            android:autofillHints="" tools:ignore="LabelFor,SpUsage"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
